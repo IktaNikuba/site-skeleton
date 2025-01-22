@@ -1,0 +1,30 @@
+@mixin title-underlay($bg-color:var(--amber-orange),
+                      $border-radius: 8px,
+                      $rotate: 1.62deg) {
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+    border-radius: $border-radius;
+    transform: rotate($rotate);
+    content: " ";
+  }
+}
+
+@mixin svg-icon($margin: 0 2px 0 0,
+                $width: 20px,
+                $bg-img: none) {
+  display: block;
+  width: $width;
+  aspect-ratio: 1;
+  margin: $margin;
+  background-image: $bg-img;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}

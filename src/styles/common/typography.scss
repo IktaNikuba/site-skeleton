@@ -1,0 +1,130 @@
+:root {
+  --font-color: var(--black);
+}
+
+$h1-fs: clamp($fs-big-sm, $fs-factor-big-xxl, $fs-big-xxl);
+$h2-fs: clamp($fs-big-xs, $fs-factor-big-xl, $fs-big-xl);
+$h3-fs: clamp($fs-tiny-xxl, $fs-factor-big-lg, $fs-big-lg);
+$h4-fs: clamp($fs-big-xs, $fs-factor-big-sm, $fs-big-sm);
+$h5-fs: clamp($fs-tiny-lg, $fs-factor-big-xxs, $fs-big-xxs);
+
+/*
+// full-viewport
+$h1-fs: max($fs-big-sm, $fs-factor-big-xxl);
+$h2-fs: max($fs-big-xs, $fs-factor-big-xl);
+$h3-fs: max($fs-tiny-xxl, $fs-factor-big-lg);
+$h4-fs: max($fs-big-xs, $fs-factor-big-sm);
+$h5-fs: max($fs-tiny-lg, $fs-factor-big-xxs);
+*/
+
+$h1-lh: $lh-xs;
+$h2-lh: $lh-sm;
+$h3-lh: $lh-sm;
+$h4-lh: $lh-lg;
+$h5-lh: $lh-xl;
+
+$h1-fw: $fw-md;
+$h2-fw: $fw-md;
+$h3-fw: $fw-md;
+$h4-fw: $fw-md;
+$h5-fw: $fw-md;
+
+$text-large-fs: clamp($fs-tiny-md, $fs-factor-tiny-xxl, $fs-tiny-xxl);
+$text-normal-fs: clamp($fs-tiny-sm, $fs-factor-tiny-md, $fs-tiny-md);
+$text-sub-fs: clamp($fs-tiny-xs, $fs-factor-tiny-sm, $fs-tiny-sm);
+$text-label-fs: clamp($fs-tiny-xxs, $fs-factor-tiny-xs, $fs-tiny-xs);
+$text-button-fs: clamp($fs-tiny-sm, $fs-factor-tiny-md, $fs-tiny-md);
+
+/*
+// full-viewport
+$text-large-fs: max($fs-tiny-md, $fs-factor-tiny-xxl);
+$text-normal-fs: max($fs-tiny-sm, $fs-factor-tiny-md);
+$text-sub-fs: max($fs-tiny-xs, $fs-factor-tiny-sm);
+$text-label-fs: max($fs-tiny-xxs, $fs-factor-tiny-xs);
+$text-button-fs: max($fs-tiny-sm, $fs-factor-tiny-md);
+*/
+
+$text-large-lh: $lh-xl;
+$text-normal-lh: $lh-xl;
+$text-sub-lh: $lh-xl;
+$text-label-lh: $lh-xl;
+$text-button-lh: $lh-xl;
+
+$text-large-fw: $fw-lg;
+$text-normal-fw: $fw-sm;
+$text-sub-fw: $fw-sm;
+$text-label-fw: $fw-sm;
+$text-button-fw: $fw-sm;
+
+body {
+  color: var(--font-color);
+  font-weight: $text-normal-fw;
+  font-size: $text-normal-fs;
+  font-family: $font-family-body;
+  line-height: $text-normal-lh;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-title !important;
+}
+
+h1 {
+  font-weight: $h1-fw;
+  font-size: $h1-fs;
+  line-height: $h1-lh;
+}
+
+h2 {
+  font-weight: $h2-fw;
+  font-size: $h2-fs;
+  line-height: $h2-lh;
+}
+
+h3 {
+  font-weight: $h3-fw;
+  font-size: $h3-fs;
+  line-height: $h3-lh;
+}
+
+h4 {
+  font-weight: $h4-fw;
+  font-size: $h4-fs;
+  line-height: $h4-lh;
+}
+
+h5 {
+  font-weight: $h5-fw;
+  font-size: $h5-fs;
+  line-height: $h5-lh;
+}
+
+.large-text {
+  font-weight: $text-large-fw;
+  font-size: $text-large-fs;
+  line-height: $text-large-lh;
+}
+
+.normal-text {
+  font-weight: $text-normal-fw;
+  font-size: $text-normal-fs;
+  line-height: $text-normal-lh;
+}
+
+.sub-text {
+  font-weight: $text-sub-fw;
+  font-size: $text-sub-fs;
+  line-height: $text-sub-lh;
+}
+
+.label-text {
+  font-weight: $text-label-fw;
+  font-size: $text-label-fs;
+  line-height: $text-label-lh;
+}
+
+.button-text {
+  font-weight: $text-button-fw;
+  font-size: $text-button-fs;
+  line-height: $text-button-lh;
+}
+

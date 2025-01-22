@@ -1,0 +1,60 @@
+// base palette
+:root {
+  --total-black: #000;
+  --classic-white: #FFF;
+  --night-blue: #232B7A;
+  --lavender-blue: #E2EAFF;
+  --ghostly-white: #F4F7FF;
+  --rich-orange-yellow: #FCA00A;
+  --sunset-color: #F8D5AA;
+  --half-black-gray: #808080;
+  --platinum: #E6E6E6;
+  --blue-lamantin: #9195BC;
+  --scarlet: #FF1500;
+  --transparent: transparent;
+  --gray-umber: #2F2F2F;
+  --primary: var(--night-blue);
+  --secondary: var(--rich-orange-yellow);
+  --success: var(--ghostly-white);
+  --info: var(--lavender-blue);
+  --white: var(--classic-white);
+  --danger: var(--scarlet);
+  --warning: var(--sunset-color);
+  --black: var(--total-black);
+  --prevail: var(--classic-white);
+  --prevail-background: var(--prevail);
+  --text-on-white-prevail-light: var(--half-black-gray);
+  --text-on-white-prevail-dark: var(--classic-black);
+  --text-on-white-prevail-color: var(--night-blue);
+  --primary-background: var(--night-blue);
+  --text-on-primary-light: var(--classic-white);
+  --text-on-primary-dark: var(--total-black);
+  --text-on-primary-color: var(--night-blue);
+  --secondary-background: var(--rich-orange-yellow);
+  --text-on-secondary-light: var(--classic-white);
+  --text-on-secondary-dark: var(--total-black);
+  --text-on-secondary-color: var(--night-blue);
+  --success-background: var(--ghostly-white);
+  --text-on-success-light: var(--classic-white);
+  --text-on-success-dark: var(--total-black);
+  --text-on-success-color: var(--night-blue);
+  --info-background: var(--lavender-blue);
+  --text-on-info-light: var(--classic-white);
+  --text-on-info-dark: var(--total-black);
+  --text-on-info-color: var(--night-blue);
+  --white-background: var(--classic-white);
+  --text-on-white-light: var(--half-black-gray);
+  --text-on-white-dark: var(--classic-black);
+  --text-on-white-color: var(--night-blue);
+  --black-background: var(--classic-black);
+  --text-on-black-light: var(--classic-white);
+  --text-on-black-dark: var(--half-black-gray);
+  
+  /* --text-on-black-color: var(--night-blue); */
+  
+  --transparent-background: var(--transparent);
+  --text-on-transparent-light: var(--half-black-gray);
+  --text-on-transparent-dark: var(--classic-black);
+  --text-on-transparent-color: var(--night-blue);
+  --shadow: #232B7A26;
+}

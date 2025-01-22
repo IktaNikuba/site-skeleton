@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview",
+    "eslint": "eslint '**/*.js'",
+    "stylelint": "stylelint '**/*.scss'",
+    "eslint-fix": "eslint '**/*.js' --fix",
+    "stylelint-fix": "stylelint '**/*.scss' --fix",
+    "lint": "npm run eslint && npm run stylelint",
+    "lint-fix": "npm run eslint-fix && npm run stylelint-fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@funboxteam/beatrix": "^3.0.1",
+    "autoprefixer": "^10.4.20",
+    "bootstrap": "^5.3.3",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "postcss-csso": "^6.0.1",
+    "sass": "^1.83.4",
+    "stylelint": "^16.13.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.10.1",
+    "terser": "^5.37.0",
+    "vite": "^6.0.11",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-stylelint": "^6.0.0"
+  }
+}

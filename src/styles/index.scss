@@ -1,0 +1,30 @@
+@import "common/_variables";
+// stylelint disable
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "common/reset";
+@import "common/fonts";
+@import "variables/grid&breakpoints";
+@import "variables/color-theme";
+@import "variables/sizing";
+@import "variables/borders";
+@import "variables/mixins";
+@import "variables/other-variables";
+@import "variables/fonts";
+@import "common/icons-font";
+@import "common/typography";
+@import "common/common";
+
+@import "components/buttons";
+@import "components/button-menu";
+@import "components/logo-link";
+@import "components/main-menu";
+@import "components/navigation";
+@import "components/socials";
+@import "components/language";
+
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+@import "widgets/sections";

@@ -1,0 +1,21 @@
+// Устройства
+$mouse-device: "(hover: hover)";
+$touch-device: "(hover: none)";
+$portrait: "orientation: portrait";
+$landscape: "orientation: landscape";
+
+// z-index
+$z-index-base: 0;
+$z-index-relative: $z-index-base + 10;
+$z-index-absolute: $z-index-relative + 10;
+$z-index-dropdown: $z-index-absolute + 10;
+$z-index-sticky: $z-index-dropdown + 10;
+$z-index-fixed: $z-index-sticky + 10;
+$z-index-modal-backdrop: $z-index-fixed + 10;
+$z-index-modal: $z-index-modal-backdrop + 10;
+$z-index-popover: $z-index-modal + 10;
+$z-index-tooltip: $z-index-popover + 10;
+
+$shadow: 0px 0px 5px 0px var(--shadow);
+
+$rotation: 359deg;

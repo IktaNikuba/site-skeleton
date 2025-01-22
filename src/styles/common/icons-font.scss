@@ -1,0 +1,100 @@
+$icons-font: 'lukov-icon-font';
+
+@font-face {
+  font-weight: normal;
+  font-family: $icons-font;
+  font-style: normal;
+  src: url('../../assets/icons-font/lukov-icon-font.woff?60bwao') format('woff'),
+  url('../../assets/icons-font/lukov-icon-font.ttf?60bwao') format('truetype'),
+  url('../../assets/icons-font/lukov-icon-font.svg?60bwao#lukov-icon-font') format('svg');
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+[class^="icon-"]::after,
+[class*="icon-"]::before,
+[class*="icon-"]::after {
+  font-weight: normal;
+  font-size: max($fs-tiny-xs, $fs-factor-tiny-xs);
+  font-family: $icons-font;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar::before {
+  content: "\e900";
+}
+
+.icon-phone::before {
+  content: "\e902";
+}
+
+.icon-whatsapp::before {
+  font-size: 24px;
+  content: "\e901";
+}
+
+.icon-telegram::before {
+  font-size: 24px;
+  content: "\e903";
+}
+
+.icon-plus::before {
+  content: "\e904";
+}
+
+.icon-instagram::before {
+  content: "\e905";
+}
+
+.icon-map-mark {
+  .path1::before {
+    color: rgb(35, 43, 122);
+    content: "\e906";
+  }
+  
+  .path2::before {
+    margin-left: -0.7392578125em;
+    color: rgb(241, 167, 73);
+    content: "\e907";
+  }
+  
+  .path3::before {
+    margin-left: -0.7392578125em;
+    color: rgb(241, 167, 73);
+    content: "\e908";
+  }
+  
+  .path4::before {
+    margin-left: -0.7392578125em;
+    color: rgb(241, 167, 73);
+    content: "\e909";
+  }
+  
+  .path5::before {
+    margin-left: -0.7392578125em;
+    color: rgb(241, 167, 73);
+    content: "\e90a";
+  }
+}
+
+.icon-arrow-down::before {
+  color: #232b7a;
+  content: "\e90b";
+}
+
+.icon-arrow-right::before {
+  color: #232b7a;
+  content: "\e90c";
+}
+
+.icon-globe::before {
+  color: #232b7a;
+  font-size: 20px;
+  content: "\e90d";
+}

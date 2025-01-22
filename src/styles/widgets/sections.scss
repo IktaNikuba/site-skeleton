@@ -1,0 +1,22 @@
+$section-padding: clamp($sp-8, $sp-15-factor-y, $sp-10) 0;
+$section-padding--md: $sp-8 0;
+$section--last-text-align: center;
+$section--last-font-size: clamp($fs-tiny-xs, $fs-factor-tiny-sm, $fs-tiny-sm);
+$section--first-padding-top: $sp-8;
+
+.section {
+  padding: $section-padding;
+  
+  @media #{$md} {
+    padding: $section-padding--md;
+  }
+  
+  &--first {
+    padding-top: $section--first-padding-top;
+  }
+  
+  &--last {
+    font-size: $section--last-font-size;
+    text-align: $section--last-text-align;
+  }
+}

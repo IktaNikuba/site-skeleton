@@ -1,0 +1,166 @@
+// Определение пропорций
+$layout-width: 1440px;
+$layout-height: 1117px;
+
+$pixel-width: calc(100 / $layout-width);
+$pixel-height: calc(100 / $layout-height);
+
+// Функция подсчета и округления размеров
+@function calculate-size($size, $type: 'vw') {
+  @if $type == 'vw' {
+    @return round(($size * $pixel-width), 0.2) * 1vw;
+  } @else if $type == 'vh' {
+    @return round(($size * $pixel-height), 0.2) * 1vh;
+  }
+}
+
+// Определение размеров шрифтов
+$fs-tiny-xxs: 10px;
+$fs-factor-tiny-xxs: calculate-size($fs-tiny-xxs, 'vw');
+$fs-tiny-xs: 12px;
+$fs-factor-tiny-xs: calculate-size($fs-tiny-xs, 'vw');
+$fs-tiny-sm: 14px;
+$fs-factor-tiny-sm: calculate-size($fs-tiny-sm, 'vw');
+$fs-tiny-md: 16px;
+$fs-factor-tiny-md: calculate-size($fs-tiny-md, 'vw');
+$fs-tiny-lg: 18px;
+$fs-factor-tiny-lg: calculate-size($fs-tiny-lg, 'vw');
+$fs-tiny-xl: 20px;
+$fs-factor-tiny-xl: calculate-size($fs-tiny-xl, 'vw');
+$fs-tiny-xxl: 23px;
+$fs-factor-tiny-xxl: calculate-size($fs-tiny-xl, 'vw');
+$fs-big-xxs: 26px;
+$fs-factor-big-xxs: calculate-size($fs-big-xxs, 'vw');
+$fs-big-xs: 27px;
+$fs-factor-big-xs: calculate-size($fs-big-xs, 'vw');
+$fs-big-sm: 32px;
+$fs-factor-big-sm: calculate-size($fs-big-sm, 'vw');
+$fs-big-md: 37px;
+$fs-factor-big-md: calculate-size($fs-big-md, 'vw');
+$fs-big-lg: 44px;
+$fs-factor-big-lg: calculate-size($fs-big-lg, 'vw');
+$fs-big-xl: 52px;
+$fs-factor-big-xl: calculate-size($fs-big-xl, 'vw');
+$fs-big-xxl: 54px;
+$fs-factor-big-xxl: calculate-size($fs-big-xl, 'vw');
+
+// Устанавливаем базовый шаг, который можно менять (например, 4px или 5px)
+$spacing-step: 4px !default;
+
+// Функция для автоматического расчета отступов
+@function sp($multiplier) {
+  @return $multiplier * $spacing-step;
+}
+
+// Определение переменных пространства
+$sp-1: sp(1); // 4px или 5px
+$sp-1-factor-x: calculate-size($sp-1, 'vw');
+$sp-1-factor-y: calculate-size($sp-1, 'vh');
+
+$sp-2: sp(2); // 8px или 10px
+$sp-2-factor-x: calculate-size($sp-2, 'vw');
+$sp-2-factor-y: calculate-size($sp-2, 'vh');
+
+$sp-3: sp(3); // 12px или 15px
+$sp-3-factor-x: calculate-size($sp-3, 'vw');
+$sp-3-factor-y: calculate-size($sp-3, 'vh');
+
+$sp-4: sp(4); // 16px или 20px
+$sp-4-factor-x: calculate-size($sp-4, 'vw');
+$sp-4-factor-y: calculate-size($sp-4, 'vh');
+
+$sp-5: sp(5); // 20px или 25px
+$sp-5-factor-x: calculate-size($sp-5, 'vw');
+$sp-5-factor-y: calculate-size($sp-5, 'vh');
+
+$sp-6: sp(6); // 24px или 30px
+$sp-6-factor-x: calculate-size($sp-6, 'vw');
+$sp-6-factor-y: calculate-size($sp-6, 'vh');
+
+$sp-7: sp(7); // 28px или 35px
+$sp-7-factor-x: calculate-size($sp-7, 'vw');
+$sp-7-factor-y: calculate-size($sp-7, 'vh');
+
+$sp-8: sp(8); // 32px или 40px
+$sp-8-factor-x: calculate-size($sp-8, 'vw');
+$sp-8-factor-y: calculate-size($sp-8, 'vh');
+
+$sp-9: sp(9); // 36px или 45px
+$sp-9-factor-x: calculate-size($sp-9, 'vw');
+$sp-9-factor-y: calculate-size($sp-9, 'vh');
+
+$sp-10: sp(10); // 40px или 50px
+$sp-10-factor-x: calculate-size($sp-10, 'vw');
+$sp-10-factor-y: calculate-size($sp-10, 'vh');
+
+$sp-11: sp(11); // 44px или 55px
+$sp-11-factor-x: calculate-size($sp-11, 'vw');
+$sp-11-factor-y: calculate-size($sp-11, 'vh');
+
+$sp-12: sp(12); // 48px или 60px
+$sp-12-factor-x: calculate-size($sp-12, 'vw');
+$sp-12-factor-y: calculate-size($sp-12, 'vh');
+
+$sp-13: sp(13); // 52px или 65px
+$sp-13-factor-x: calculate-size($sp-13, 'vw');
+$sp-13-factor-y: calculate-size($sp-13, 'vh');
+
+$sp-14: sp(14); // 56px или 70px
+$sp-14-factor-x: calculate-size($sp-14, 'vw');
+$sp-14-factor-y: calculate-size($sp-14, 'vh');
+
+$sp-15: sp(15); // 60px или 75px
+$sp-15-factor-x: calculate-size($sp-15, 'vw');
+$sp-15-factor-y: calculate-size($sp-15, 'vh');
+
+$sp-16: sp(16); // 64px или 80px
+$sp-16-factor-x: calculate-size($sp-16, 'vw');
+$sp-16-factor-y: calculate-size($sp-16, 'vh');
+
+$sp-17: sp(17); // 68px или 85px
+$sp-17-factor-x: calculate-size($sp-17, 'vw');
+$sp-17-factor-y: calculate-size($sp-17, 'vh');
+
+$sp-18: sp(18); // 72px или 90px
+$sp-18-factor-x: calculate-size($sp-18, 'vw');
+$sp-18-factor-y: calculate-size($sp-18, 'vh');
+
+$sp-19: sp(19); // 76px или 95px
+$sp-19-factor-x: calculate-size($sp-19, 'vw');
+$sp-19-factor-y: calculate-size($sp-19, 'vh');
+
+$sp-20: sp(20); // 80px или 100px
+$sp-20-factor-x: calculate-size($sp-20, 'vw');
+$sp-20-factor-y: calculate-size($sp-20, 'vh');
+
+$sp-21: sp(21); // 84px или 105px
+$sp-21-factor-x: calculate-size($sp-21, 'vw');
+$sp-21-factor-y: calculate-size($sp-21, 'vh');
+
+$sp-22: sp(22); // 88px или 110px
+$sp-22-factor-x: calculate-size($sp-22, 'vw');
+$sp-22-factor-y: calculate-size($sp-22, 'vh');
+
+$sp-23: sp(23); // 92px или 115px
+$sp-23-factor-x: calculate-size($sp-23, 'vw');
+$sp-23-factor-y: calculate-size($sp-23, 'vh');
+
+$sp-24: sp(24); // 96px или 120px
+$sp-24-factor-x: calculate-size($sp-24, 'vw');
+$sp-24-factor-y: calculate-size($sp-24, 'vh');
+
+$sp-25: sp(25); // 100px или 125px
+$sp-25-factor-x: calculate-size($sp-25, 'vw');
+$sp-25-factor-y: calculate-size($sp-25, 'vh');
+
+$sp-custom-6px: 6px;
+$sp-6px-factor-x: calculate-size($sp-custom-6px, 'vw');
+$sp-6px-factor-y: calculate-size($sp-custom-6px, 'vh');
+
+$sp-custom-150px: 150px;
+$sp-150px-factor-x: calculate-size($sp-custom-150px, 'vw');
+$sp-150px-factor-y: calculate-size($sp-custom-150px, 'vh');
+
+$sp-custom-200px: 200px;
+$sp-200px-factor-x: calculate-size($sp-custom-200px, 'vw');
+$sp-200px-factor-y: calculate-size($sp-custom-200px, 'vh');

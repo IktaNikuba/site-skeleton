@@ -1,0 +1,24 @@
+$font-family-title: "Inter";
+$font-family-body: "Codec Pro";
+
+@font-face {
+  font-weight: 400;
+  font-family: $font-family-body;
+  font-style: normal;
+  src: local('CodecPro Regular'), local('CodecPro-Regular'),
+  url('/assets/fonts/cutfont/CodecPro-Regular.woff2') format('woff2'),
+  url('/assets/fonts/cutfont/CodecPro-Regular.woff') format('woff'),
+  url('/assets/fonts/cutfont/CodecPro-Regular.ttf') format('truetype');
+  font-display: fallback;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: $font-family-title;
+  font-style: normal;
+  src: local('Inter'), local('Inter-VariableFont'), local('Inter Variable Font'),
+  url('/assets/fonts/cutfont/Inter.woff2') format('woff2'),
+  url('/assets/fonts/cutfont/Inter.woff') format('woff'),
+  url('/assets/fonts/cutfont/Inter.ttf') format('truetype');
+  font-display: fallback;
+}
