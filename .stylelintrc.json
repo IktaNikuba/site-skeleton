@@ -7,6 +7,8 @@
   "rules": {
     "at-rule-descriptor-value-no-unknown": null,
     "declaration-property-value-no-unknown": null,
+    "custom-property-empty-line-before": null,
+    "no-empty-source": null,
     "custom-property-pattern": [
       "",
       {

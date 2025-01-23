@@ -1,6 +1,6 @@
 import {setupCounter} from "./counter.js"
 
-export default (function () {
+export default (function() {
   function init() {
     document.querySelector('#app').innerHTML = `
       <div class="container h-100 d-flex flex-column align-items-center justify-content-center">

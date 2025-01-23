@@ -1,4 +1,4 @@
-import defineConfig from 'vite'
+import { defineConfig } from 'vite'
 import path from 'path'
 import eslint from 'vite-plugin-eslint'
 import stylelint from 'vite-plugin-stylelint'
