@@ -1,10 +1,10 @@
-{
-  "extends": [
+export default {
+  extends: [
     "stylelint-config-standard",
     "stylelint-config-standard-scss",
     "stylelint-config-rational-order"
   ],
-  "rules": {
+  rules: {
     "at-rule-descriptor-value-no-unknown": null,
     "declaration-property-value-no-unknown": null,
     "custom-property-empty-line-before": null,
@@ -12,7 +12,7 @@
     "custom-property-pattern": [
       "",
       {
-        "message": ""
+        message: ""
       }
     ],
     "at-rule-empty-line-before": null,
@@ -24,10 +24,10 @@
     "scss/dollar-variable-empty-line-before": [
       "always",
       {
-        "except": [
+        except: [
           "first-nested"
         ],
-        "ignore": [
+        ignore: [
           "after-comment",
           "after-dollar-variable"
         ]
@@ -38,7 +38,7 @@
     "value-keyword-case": [
       "lower",
       {
-        "ignoreProperties": [
+        ignoreProperties: [
           "/^\\$/"
         ]
       }
@@ -53,10 +53,10 @@
     "value-no-vendor-prefix": [
       true,
       {
-        "ignoreValues": [
+        ignoreValues: [
           "box"
         ]
       }
     ]
   }
-}
+};
